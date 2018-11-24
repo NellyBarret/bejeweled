@@ -1,0 +1,79 @@
+\hypertarget{classImage}{}\section{Image Class Reference}
+\label{classImage}\index{Image@{Image}}
+
+
+This class manages the image.  
+
+
+
+
+{\ttfamily \#include $<$Image.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImage_a58edd1c45b4faeb5f789b0d036d02313}{Image} ()\hypertarget{classImage_a58edd1c45b4faeb5f789b0d036d02313}{}\label{classImage_a58edd1c45b4faeb5f789b0d036d02313}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classImage_a0294f63700543e11c0f0da85601c7ae5}{$\sim$\+Image} ()\hypertarget{classImage_a0294f63700543e11c0f0da85601c7ae5}{}\label{classImage_a0294f63700543e11c0f0da85601c7ae5}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Surface $\ast$ \hyperlink{classImage_a963ba7fc811e8520ca6dce52bbdb5725}{get\+\_\+surface} () const 
+\begin{DoxyCompactList}\small\item\em Accessor. Get a surface. \end{DoxyCompactList}\item 
+void \hyperlink{classImage_ab887e4107f2ea756311e4e9c83d3c695}{set\+\_\+surface} (S\+D\+L\+\_\+\+Surface $\ast$newsurface)
+\begin{DoxyCompactList}\small\item\em Mutator. Set the current surface with newsurface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class manages the image. 
+
+\begin{DoxyAuthor}{Author}
+Nelly B\+A\+R\+R\+ET, Monica L\+I\+S\+A\+C\+EK, Hanna P\+A\+R\+S\+H\+U\+TO 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+26/03/2017
+\end{DoxyDate}
+Constructors, load from file and specific functions.
+
+This class contains S\+DL graphics. This class manages the creation of images and their usage. 
+
+\subsection{Member Function Documentation}
+\index{Image@{Image}!get\+\_\+surface@{get\+\_\+surface}}
+\index{get\+\_\+surface@{get\+\_\+surface}!Image@{Image}}
+\subsubsection[{\texorpdfstring{get\+\_\+surface() const }{get_surface() const }}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Surface $\ast$ Image\+::get\+\_\+surface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classImage_a963ba7fc811e8520ca6dce52bbdb5725}{}\label{classImage_a963ba7fc811e8520ca6dce52bbdb5725}
+
+
+Accessor. Get a surface. 
+
+\begin{DoxyReturn}{Returns}
+A S\+DL surface 
+\end{DoxyReturn}
+\index{Image@{Image}!set\+\_\+surface@{set\+\_\+surface}}
+\index{set\+\_\+surface@{set\+\_\+surface}!Image@{Image}}
+\subsubsection[{\texorpdfstring{set\+\_\+surface(\+S\+D\+L\+\_\+\+Surface $\ast$newsurface)}{set_surface(SDL_Surface *newsurface)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+::set\+\_\+surface (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{newsurface}
+\end{DoxyParamCaption}
+)}\hypertarget{classImage_ab887e4107f2ea756311e4e9c83d3c695}{}\label{classImage_ab887e4107f2ea756311e4e9c83d3c695}
+
+
+Mutator. Set the current surface with newsurface. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em newsurface} & \+: a S\+DL surface wich will replace the current S\+DL surface \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Image.\+h\item 
+src/Image.\+cpp\end{DoxyCompactItemize}

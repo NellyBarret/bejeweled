@@ -1,0 +1,234 @@
+\hypertarget{classGrid}{}\section{Grid Class Reference}
+\label{classGrid}\index{Grid@{Grid}}
+
+
+This class manages the grid and all the functions which deals with the grid.  
+
+
+
+
+{\ttfamily \#include $<$Grid.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGrid_a4ac9ff4f63552b4c61ff90fcb35ad66c}{Grid} ()\hypertarget{classGrid_a4ac9ff4f63552b4c61ff90fcb35ad66c}{}\label{classGrid_a4ac9ff4f63552b4c61ff90fcb35ad66c}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. Initialize the dimensions of the grid to 0. \end{DoxyCompactList}\item 
+\hyperlink{classGrid_aeb3d81a4eaf308fb7ee1cd691a610b43}{Grid} (int dimensionX, int dimensionY)
+\begin{DoxyCompactList}\small\item\em Constructor. Build a new grid dynamically. \end{DoxyCompactList}\item 
+\hyperlink{classGrid_a3661d0a7f998caaaf8627d7a67072116}{$\sim$\+Grid} ()\hypertarget{classGrid_a3661d0a7f998caaaf8627d7a67072116}{}\label{classGrid_a3661d0a7f998caaaf8627d7a67072116}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classGrid_a719aca13ba7012373a59f698ee3a5918}{initialize\+\_\+grid} (const char carac)
+\begin{DoxyCompactList}\small\item\em Procedure. Initialize the grid with a character. \end{DoxyCompactList}\item 
+char \hyperlink{classGrid_a0cbea909ed73a9e2589607e58cd668ef}{random\+\_\+jewel} (int min, int max)
+\begin{DoxyCompactList}\small\item\em Function. Create a new random jewel which is a letter between A and G. \end{DoxyCompactList}\item 
+void \hyperlink{classGrid_a71f711453d21412be42f1b77e678368f}{display\+\_\+grid} ()\hypertarget{classGrid_a71f711453d21412be42f1b77e678368f}{}\label{classGrid_a71f711453d21412be42f1b77e678368f}
+
+\begin{DoxyCompactList}\small\item\em Procedure. Display the grid to the screen. \end{DoxyCompactList}\item 
+void \hyperlink{classGrid_a33f8649c54b789906328f9aabd7f8081}{fill\+\_\+grid\+\_\+jewel} ()\hypertarget{classGrid_a33f8649c54b789906328f9aabd7f8081}{}\label{classGrid_a33f8649c54b789906328f9aabd7f8081}
+
+\begin{DoxyCompactList}\small\item\em Procedure. Fill the grid with the random jewels. \end{DoxyCompactList}\item 
+void \hyperlink{classGrid_adea72fa7e2e2f012932f02881e305494}{alignment\+\_\+verification} (int \&nb\+Align\+R3, int \&nb\+Align\+R4, int \&nb\+Align\+R5, int \&nb\+Align\+C3, int \&nb\+Align\+C4, int \&nb\+Align\+C5)
+\begin{DoxyCompactList}\small\item\em Procedure. Check and count the number of alignments in the grid (3 to 8 jewels aligned). \end{DoxyCompactList}\item 
+bool \hyperlink{classGrid_a745f847f89d5bff5a95b453a2b518351}{swap\+\_\+jewel} (int x1, int y1, int x2, int y2)
+\begin{DoxyCompactList}\small\item\em Function. Swap two jewels to make an alignment. \end{DoxyCompactList}\item 
+void \hyperlink{classGrid_a2f90f70fac7091c5ee3c8d3c78709611}{count\+\_\+score} (int nb\+Align\+R3, int nb\+Align\+R4, int nb\+Align\+R5, int nb\+Align\+C3, int nb\+Align\+C4, int nb\+Align\+C5)
+\begin{DoxyCompactList}\small\item\em Procedure. Count the score in function of the alignments. \end{DoxyCompactList}\item 
+void \hyperlink{classGrid_a431072be83d45cc180416ed78d5eee73}{set\+\_\+score} (int points)
+\begin{DoxyCompactList}\small\item\em Mutator. Give a value to the score. \end{DoxyCompactList}\item 
+int \hyperlink{classGrid_a02344c40c13b6a311b4bab0dfd66942f}{get\+\_\+score} ()
+\begin{DoxyCompactList}\small\item\em Accessor. Take the score of the grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class manages the grid and all the functions which deals with the grid. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Grid@{Grid}!Grid@{Grid}}
+\index{Grid@{Grid}!Grid@{Grid}}
+\subsubsection[{\texorpdfstring{Grid(int dimension\+X, int dimension\+Y)}{Grid(int dimensionX, int dimensionY)}}]{\setlength{\rightskip}{0pt plus 5cm}Grid\+::\+Grid (
+\begin{DoxyParamCaption}
+\item[{int}]{dimensionX, }
+\item[{int}]{dimensionY}
+\end{DoxyParamCaption}
+)}\hypertarget{classGrid_aeb3d81a4eaf308fb7ee1cd691a610b43}{}\label{classGrid_aeb3d81a4eaf308fb7ee1cd691a610b43}
+
+
+Constructor. Build a new grid dynamically. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dimensionX} & \+: width of the grid \\
+\hline
+\mbox{\tt in}  & {\em dimensionY} & \+: height of the grid \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Grid@{Grid}!alignment\+\_\+verification@{alignment\+\_\+verification}}
+\index{alignment\+\_\+verification@{alignment\+\_\+verification}!Grid@{Grid}}
+\subsubsection[{\texorpdfstring{alignment\+\_\+verification(int \&nb\+Align\+R3, int \&nb\+Align\+R4, int \&nb\+Align\+R5, int \&nb\+Align\+C3, int \&nb\+Align\+C4, int \&nb\+Align\+C5)}{alignment_verification(int &nbAlignR3, int &nbAlignR4, int &nbAlignR5, int &nbAlignC3, int &nbAlignC4, int &nbAlignC5)}}]{\setlength{\rightskip}{0pt plus 5cm}void Grid\+::alignment\+\_\+verification (
+\begin{DoxyParamCaption}
+\item[{int \&}]{nb\+Align\+R3, }
+\item[{int \&}]{nb\+Align\+R4, }
+\item[{int \&}]{nb\+Align\+R5, }
+\item[{int \&}]{nb\+Align\+C3, }
+\item[{int \&}]{nb\+Align\+C4, }
+\item[{int \&}]{nb\+Align\+C5}
+\end{DoxyParamCaption}
+)}\hypertarget{classGrid_adea72fa7e2e2f012932f02881e305494}{}\label{classGrid_adea72fa7e2e2f012932f02881e305494}
+
+
+Procedure. Check and count the number of alignments in the grid (3 to 8 jewels aligned). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em nb\+Align\+R3} & \+: count the number of 3 aligned jewels in a row \\
+\hline
+\mbox{\tt in,out}  & {\em nb\+Align\+R4} & \+: count the number of 4 aligned jewels in a row \\
+\hline
+\mbox{\tt in,out}  & {\em nb\+Align\+R5} & \+: count the number of 5 aligned jewels in a row \\
+\hline
+\mbox{\tt in,out}  & {\em nb\+Align\+C3} & \+: count the number of 3 aligned jewels in a column \\
+\hline
+\mbox{\tt in,out}  & {\em nb\+Align\+C4} & \+: count the number of 4 aligned jewels in a column \\
+\hline
+\mbox{\tt in,out}  & {\em nb\+Align\+C5} & \+: count the number of 5 aligned jewels in a column \\
+\hline
+\end{DoxyParams}
+\index{Grid@{Grid}!count\+\_\+score@{count\+\_\+score}}
+\index{count\+\_\+score@{count\+\_\+score}!Grid@{Grid}}
+\subsubsection[{\texorpdfstring{count\+\_\+score(int nb\+Align\+R3, int nb\+Align\+R4, int nb\+Align\+R5, int nb\+Align\+C3, int nb\+Align\+C4, int nb\+Align\+C5)}{count_score(int nbAlignR3, int nbAlignR4, int nbAlignR5, int nbAlignC3, int nbAlignC4, int nbAlignC5)}}]{\setlength{\rightskip}{0pt plus 5cm}void Grid\+::count\+\_\+score (
+\begin{DoxyParamCaption}
+\item[{int}]{nb\+Align\+R3, }
+\item[{int}]{nb\+Align\+R4, }
+\item[{int}]{nb\+Align\+R5, }
+\item[{int}]{nb\+Align\+C3, }
+\item[{int}]{nb\+Align\+C4, }
+\item[{int}]{nb\+Align\+C5}
+\end{DoxyParamCaption}
+)}\hypertarget{classGrid_a2f90f70fac7091c5ee3c8d3c78709611}{}\label{classGrid_a2f90f70fac7091c5ee3c8d3c78709611}
+
+
+Procedure. Count the score in function of the alignments. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em nb\+Align\+R3} & \+: count the number of 3 aligned jewels in a row \\
+\hline
+\mbox{\tt in,out}  & {\em nb\+Align\+R4} & \+: count the number of 4 aligned jewels in a row \\
+\hline
+\mbox{\tt in,out}  & {\em nb\+Align\+R5} & \+: count the number of 5 aligned jewels in a row \\
+\hline
+\mbox{\tt in,out}  & {\em nb\+Align\+C3} & \+: count the number of 3 aligned jewels in a column \\
+\hline
+\mbox{\tt in,out}  & {\em nb\+Align\+C4} & \+: count the number of 4 aligned jewels in a column \\
+\hline
+\mbox{\tt in,out}  & {\em nb\+Align\+C5} & \+: count the number of 5 aligned jewels in a column \\
+\hline
+\end{DoxyParams}
+\index{Grid@{Grid}!get\+\_\+score@{get\+\_\+score}}
+\index{get\+\_\+score@{get\+\_\+score}!Grid@{Grid}}
+\subsubsection[{\texorpdfstring{get\+\_\+score()}{get_score()}}]{\setlength{\rightskip}{0pt plus 5cm}int Grid\+::get\+\_\+score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classGrid_a02344c40c13b6a311b4bab0dfd66942f}{}\label{classGrid_a02344c40c13b6a311b4bab0dfd66942f}
+
+
+Accessor. Take the score of the grid. 
+
+\begin{DoxyReturn}{Returns}
+The score. 
+\end{DoxyReturn}
+\index{Grid@{Grid}!initialize\+\_\+grid@{initialize\+\_\+grid}}
+\index{initialize\+\_\+grid@{initialize\+\_\+grid}!Grid@{Grid}}
+\subsubsection[{\texorpdfstring{initialize\+\_\+grid(const char carac)}{initialize_grid(const char carac)}}]{\setlength{\rightskip}{0pt plus 5cm}void Grid\+::initialize\+\_\+grid (
+\begin{DoxyParamCaption}
+\item[{const char}]{carac}
+\end{DoxyParamCaption}
+)}\hypertarget{classGrid_a719aca13ba7012373a59f698ee3a5918}{}\label{classGrid_a719aca13ba7012373a59f698ee3a5918}
+
+
+Procedure. Initialize the grid with a character. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em carac} & \+: the caracter wich initialize the grid \\
+\hline
+\end{DoxyParams}
+\index{Grid@{Grid}!random\+\_\+jewel@{random\+\_\+jewel}}
+\index{random\+\_\+jewel@{random\+\_\+jewel}!Grid@{Grid}}
+\subsubsection[{\texorpdfstring{random\+\_\+jewel(int min, int max)}{random_jewel(int min, int max)}}]{\setlength{\rightskip}{0pt plus 5cm}char Grid\+::random\+\_\+jewel (
+\begin{DoxyParamCaption}
+\item[{int}]{min, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}\hypertarget{classGrid_a0cbea909ed73a9e2589607e58cd668ef}{}\label{classGrid_a0cbea909ed73a9e2589607e58cd668ef}
+
+
+Function. Create a new random jewel which is a letter between A and G. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em min} & \+: the min value of the range \\
+\hline
+\mbox{\tt in}  & {\em max} & \+: the max value of the range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The character which corresponds to a jewel. 
+\end{DoxyReturn}
+\index{Grid@{Grid}!set\+\_\+score@{set\+\_\+score}}
+\index{set\+\_\+score@{set\+\_\+score}!Grid@{Grid}}
+\subsubsection[{\texorpdfstring{set\+\_\+score(int points)}{set_score(int points)}}]{\setlength{\rightskip}{0pt plus 5cm}void Grid\+::set\+\_\+score (
+\begin{DoxyParamCaption}
+\item[{int}]{points}
+\end{DoxyParamCaption}
+)}\hypertarget{classGrid_a431072be83d45cc180416ed78d5eee73}{}\label{classGrid_a431072be83d45cc180416ed78d5eee73}
+
+
+Mutator. Give a value to the score. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em points} & \+: the new value of the score \\
+\hline
+\end{DoxyParams}
+\index{Grid@{Grid}!swap\+\_\+jewel@{swap\+\_\+jewel}}
+\index{swap\+\_\+jewel@{swap\+\_\+jewel}!Grid@{Grid}}
+\subsubsection[{\texorpdfstring{swap\+\_\+jewel(int x1, int y1, int x2, int y2)}{swap_jewel(int x1, int y1, int x2, int y2)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Grid\+::swap\+\_\+jewel (
+\begin{DoxyParamCaption}
+\item[{int}]{x1, }
+\item[{int}]{y1, }
+\item[{int}]{x2, }
+\item[{int}]{y2}
+\end{DoxyParamCaption}
+)}\hypertarget{classGrid_a745f847f89d5bff5a95b453a2b518351}{}\label{classGrid_a745f847f89d5bff5a95b453a2b518351}
+
+
+Function. Swap two jewels to make an alignment. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x1} & \+: x-\/axis of the first jewel to swap \\
+\hline
+\mbox{\tt in}  & {\em y1} & \+: y-\/axis of the first jewel to swap \\
+\hline
+\mbox{\tt in}  & {\em x2} & \+: x-\/axis of the second jewel to swap \\
+\hline
+\mbox{\tt in}  & {\em y2} & \+: y-\/axis of the second jewel to swap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean which values true if the swap has been made, false else. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Grid.\+h\item 
+src/Grid.\+cpp\end{DoxyCompactItemize}

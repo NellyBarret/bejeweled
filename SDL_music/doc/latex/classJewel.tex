@@ -1,0 +1,184 @@
+\hypertarget{classJewel}{}\section{Jewel Class Reference}
+\label{classJewel}\index{Jewel@{Jewel}}
+
+
+This class contains jewels and their position. This class manages the creation of a new jewel and its coordinates.  
+
+
+
+
+{\ttfamily \#include $<$Jewel.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classJewel_adb354506657192146a6cbc40c11a8a12}{Jewel} ()\hypertarget{classJewel_adb354506657192146a6cbc40c11a8a12}{}\label{classJewel_adb354506657192146a6cbc40c11a8a12}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classJewel_aa8697a078d9cbbf994545a0e239ce83e}{$\sim$\+Jewel} ()\hypertarget{classJewel_aa8697a078d9cbbf994545a0e239ce83e}{}\label{classJewel_aa8697a078d9cbbf994545a0e239ce83e}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classJewel_a023f697e2e4d4f04ddfe36dabdb44ced}{get\+\_\+xdim} () const 
+\begin{DoxyCompactList}\small\item\em Accessor. Pick the value of x-\/axis. \end{DoxyCompactList}\item 
+int \hyperlink{classJewel_a48167d37f4af709167007e7987b7f889}{get\+\_\+ydim} () const 
+\begin{DoxyCompactList}\small\item\em Accessor. Pick the value of y-\/axis. \end{DoxyCompactList}\item 
+void \hyperlink{classJewel_a2910a83ae628913f5138945a7ebff333}{set\+\_\+xdim} (int x)
+\begin{DoxyCompactList}\small\item\em Mutator. Give a value to the x-\/axis. \end{DoxyCompactList}\item 
+void \hyperlink{classJewel_a64b57d2cb0fcb99fa1e1a6aec0f7047c}{set\+\_\+ydim} (int y)
+\begin{DoxyCompactList}\small\item\em Mutator. Give a value to the y-\/axis. \end{DoxyCompactList}\item 
+char \hyperlink{classJewel_a3d1b09f84ad4c7ceff37d80ed169661a}{get\+\_\+type} () const 
+\begin{DoxyCompactList}\small\item\em Accessor. Pick the type of the jewel. \end{DoxyCompactList}\item 
+void \hyperlink{classJewel_a295f109ccd6da0a2f2a0ce9a7ebda3c4}{set\+\_\+type} (char letter)
+\begin{DoxyCompactList}\small\item\em Mutator. Give a letter to the jewel. \end{DoxyCompactList}\item 
+void \hyperlink{classJewel_ab6bc34934b2df83414bd8313c0bdc7b9}{set\+\_\+rock} (\hyperlink{classImage}{Image} im)
+\begin{DoxyCompactList}\small\item\em Mutator. Give an image to the rock. \end{DoxyCompactList}\item 
+\hyperlink{classImage}{Image} \hyperlink{classJewel_a70fd05ecc1f1dd33714494370ba921d2}{get\+\_\+rock} () const 
+\begin{DoxyCompactList}\small\item\em Accessor. Pick the value of the rock. \end{DoxyCompactList}\item 
+string \hyperlink{classJewel_a976e524b2dd1bbfc10f14909bc4d28d7}{get\+\_\+bmp} ()
+\begin{DoxyCompactList}\small\item\em Accessor. get the path of the jewel\textquotesingle{}s image, for example \char`\"{}../data/\+Aj.\+bmp\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class contains jewels and their position. This class manages the creation of a new jewel and its coordinates. 
+
+\subsection{Member Function Documentation}
+\index{Jewel@{Jewel}!get\+\_\+bmp@{get\+\_\+bmp}}
+\index{get\+\_\+bmp@{get\+\_\+bmp}!Jewel@{Jewel}}
+\subsubsection[{\texorpdfstring{get\+\_\+bmp()}{get_bmp()}}]{\setlength{\rightskip}{0pt plus 5cm}string Jewel\+::get\+\_\+bmp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classJewel_a976e524b2dd1bbfc10f14909bc4d28d7}{}\label{classJewel_a976e524b2dd1bbfc10f14909bc4d28d7}
+
+
+Accessor. get the path of the jewel\textquotesingle{}s image, for example \char`\"{}../data/\+Aj.\+bmp\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+The path (string). 
+\end{DoxyReturn}
+\index{Jewel@{Jewel}!get\+\_\+rock@{get\+\_\+rock}}
+\index{get\+\_\+rock@{get\+\_\+rock}!Jewel@{Jewel}}
+\subsubsection[{\texorpdfstring{get\+\_\+rock() const }{get_rock() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} Jewel\+::get\+\_\+rock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classJewel_a70fd05ecc1f1dd33714494370ba921d2}{}\label{classJewel_a70fd05ecc1f1dd33714494370ba921d2}
+
+
+Accessor. Pick the value of the rock. 
+
+\begin{DoxyReturn}{Returns}
+The image. 
+\end{DoxyReturn}
+\index{Jewel@{Jewel}!get\+\_\+type@{get\+\_\+type}}
+\index{get\+\_\+type@{get\+\_\+type}!Jewel@{Jewel}}
+\subsubsection[{\texorpdfstring{get\+\_\+type() const }{get_type() const }}]{\setlength{\rightskip}{0pt plus 5cm}char Jewel\+::get\+\_\+type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classJewel_a3d1b09f84ad4c7ceff37d80ed169661a}{}\label{classJewel_a3d1b09f84ad4c7ceff37d80ed169661a}
+
+
+Accessor. Pick the type of the jewel. 
+
+\begin{DoxyReturn}{Returns}
+The type of the jewel. 
+\end{DoxyReturn}
+\index{Jewel@{Jewel}!get\+\_\+xdim@{get\+\_\+xdim}}
+\index{get\+\_\+xdim@{get\+\_\+xdim}!Jewel@{Jewel}}
+\subsubsection[{\texorpdfstring{get\+\_\+xdim() const }{get_xdim() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Jewel\+::get\+\_\+xdim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classJewel_a023f697e2e4d4f04ddfe36dabdb44ced}{}\label{classJewel_a023f697e2e4d4f04ddfe36dabdb44ced}
+
+
+Accessor. Pick the value of x-\/axis. 
+
+\begin{DoxyReturn}{Returns}
+The x value. 
+\end{DoxyReturn}
+\index{Jewel@{Jewel}!get\+\_\+ydim@{get\+\_\+ydim}}
+\index{get\+\_\+ydim@{get\+\_\+ydim}!Jewel@{Jewel}}
+\subsubsection[{\texorpdfstring{get\+\_\+ydim() const }{get_ydim() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Jewel\+::get\+\_\+ydim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classJewel_a48167d37f4af709167007e7987b7f889}{}\label{classJewel_a48167d37f4af709167007e7987b7f889}
+
+
+Accessor. Pick the value of y-\/axis. 
+
+\begin{DoxyReturn}{Returns}
+The y value. 
+\end{DoxyReturn}
+\index{Jewel@{Jewel}!set\+\_\+rock@{set\+\_\+rock}}
+\index{set\+\_\+rock@{set\+\_\+rock}!Jewel@{Jewel}}
+\subsubsection[{\texorpdfstring{set\+\_\+rock(\+Image im)}{set_rock(Image im)}}]{\setlength{\rightskip}{0pt plus 5cm}void Jewel\+::set\+\_\+rock (
+\begin{DoxyParamCaption}
+\item[{{\bf Image}}]{im}
+\end{DoxyParamCaption}
+)}\hypertarget{classJewel_ab6bc34934b2df83414bd8313c0bdc7b9}{}\label{classJewel_ab6bc34934b2df83414bd8313c0bdc7b9}
+
+
+Mutator. Give an image to the rock. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em im} & \+: the image \\
+\hline
+\end{DoxyParams}
+\index{Jewel@{Jewel}!set\+\_\+type@{set\+\_\+type}}
+\index{set\+\_\+type@{set\+\_\+type}!Jewel@{Jewel}}
+\subsubsection[{\texorpdfstring{set\+\_\+type(char letter)}{set_type(char letter)}}]{\setlength{\rightskip}{0pt plus 5cm}void Jewel\+::set\+\_\+type (
+\begin{DoxyParamCaption}
+\item[{char}]{letter}
+\end{DoxyParamCaption}
+)}\hypertarget{classJewel_a295f109ccd6da0a2f2a0ce9a7ebda3c4}{}\label{classJewel_a295f109ccd6da0a2f2a0ce9a7ebda3c4}
+
+
+Mutator. Give a letter to the jewel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em letter} & \+: the value of the jewel \\
+\hline
+\end{DoxyParams}
+\index{Jewel@{Jewel}!set\+\_\+xdim@{set\+\_\+xdim}}
+\index{set\+\_\+xdim@{set\+\_\+xdim}!Jewel@{Jewel}}
+\subsubsection[{\texorpdfstring{set\+\_\+xdim(int x)}{set_xdim(int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Jewel\+::set\+\_\+xdim (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{classJewel_a2910a83ae628913f5138945a7ebff333}{}\label{classJewel_a2910a83ae628913f5138945a7ebff333}
+
+
+Mutator. Give a value to the x-\/axis. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & \+: the value of x-\/axis \\
+\hline
+\end{DoxyParams}
+\index{Jewel@{Jewel}!set\+\_\+ydim@{set\+\_\+ydim}}
+\index{set\+\_\+ydim@{set\+\_\+ydim}!Jewel@{Jewel}}
+\subsubsection[{\texorpdfstring{set\+\_\+ydim(int y)}{set_ydim(int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Jewel\+::set\+\_\+ydim (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classJewel_a64b57d2cb0fcb99fa1e1a6aec0f7047c}{}\label{classJewel_a64b57d2cb0fcb99fa1e1a6aec0f7047c}
+
+
+Mutator. Give a value to the y-\/axis. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & \+: the value of y-\/axis \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Jewel.\+h\item 
+src/Jewel.\+cpp\end{DoxyCompactItemize}
